@@ -49,6 +49,18 @@ public class Main {
 //        while (listIterator.hasPrevious()){
 //            System.out.println(listIterator.previous());
 //        }
-
+        MyLinkedStack<Integer>  mls= new MyLinkedStack<>();
+        mls.push(1);
+        mls.push(2);
+        mls.push(3);
+        mls.push(4);
+        mls.push(5);
+        mls.push(6);
+        System.out.println(mls);
+        System.out.println(mls.pop());
+        System.out.println(mls.pop());
+        System.out.println(mls.pop());
+        mls.push(8);
+        System.out.println(mls);
     }
 }
