@@ -34,22 +34,58 @@ public class Main {
 //        System.out.println(queue);
 
 
-        MyPriorityQueue<Integer> mpq = new MyPriorityQueue<>();
-        mpq.insert(6);
-        mpq.insert(16);
-        mpq.insert(2);
-        mpq.insert(3);
-        mpq.insert(7);
-        mpq.insert(5);
-        mpq.insert(9);
-        System.out.println(mpq);
+//        MyPriorityQueue<Integer> mpq = new MyPriorityQueue<>();
+//        mpq.insert(6);
+//        mpq.insert(16);
+//        mpq.insert(2);
+//        mpq.insert(3);
+//        mpq.insert(7);
+//        mpq.insert(5);
+//        mpq.insert(9);
+//        System.out.println(mpq);
+//
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq);
 
-        System.out.println(mpq.remove());
-        System.out.println(mpq.remove());
-        System.out.println(mpq.remove());
-        System.out.println(mpq.remove());
-        System.out.println(mpq);
+        TextReverse exp = new TextReverse("dune");
+        System.out.println(exp.textReverse());
 
+//        MyProirQ<Integer> mpq = new MyProirQ<>();
+//        mpq.insert(6);
+//        mpq.insert(16);
+//        mpq.insert(2);
+//        mpq.insert(3);
+//        mpq.insert(7);
+//        mpq.insert(5);
+//        mpq.insert(9);
+//        System.out.println(mpq);
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq.remove());
+//        System.out.println(mpq);
 
+        Dek<Integer> dek = new Dek<>();
+//     dek.insertRight(6);
+//        dek.insertRight(7);
+//        dek.insertRight(8);
+//        dek.insertRight(9);
+//        dek.insertRight(10);
+//
+        dek.insertLeft(5);
+        dek.insertLeft(4);
+        dek.insertLeft(3);
+//        dek.insertLeft(2);
+//        dek.insertLeft(1);
+        System.out.println(dek);
+//                System.out.println(dek.removeRight());
+//                System.out.println(dek.removeRight());
+//        System.out.println(dek.removeRight());
+//        System.out.println(dek.removeRight());
+        System.out.println(dek.removeLeft());System.out.println(dek.removeLeft());
+        System.out.println(dek.removeLeft());System.out.println(dek.removeLeft());
     }
 }
