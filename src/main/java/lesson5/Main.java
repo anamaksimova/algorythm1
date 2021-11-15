@@ -1,5 +1,11 @@
 package lesson5;
 
+import lesson2.MyArrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 //        System.out.println(fact(5));
@@ -11,8 +17,14 @@ public class Main {
 //        System.out.println(triangleNum(5));
 //        System.out.println(recTriangleNum(5));
 
-        System.out.println(multiply(3, 8));
-        System.out.println(recMultiply(3, 8));
+//        System.out.println(multiply(3, 8));
+//        System.out.println(recMultiply(3, 8));
+//        System.out.println(recExp(3,3));
+
+       int[] m = new int[] {12,2,1,4,1};
+
+        int[] price = new int[] {4,2,1,10,2};
+        System.out.println(recBackPack(m, price, 5, 15));
     }
 
     public static int multiply(int a, int b) {
@@ -78,4 +90,22 @@ public class Main {
         }
         return recFact(n - 1) * n;
     }
+    //дз 1
+    public static int recExp(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return recExp(x, n-1 )*x;
+    }
+
+    public static int recBackPack(int[] m, int[] price, int n, int M){
+      if (n<=0){
+        return 0;
+      } else if(m[n-1]>M){
+      return recBackPack(m,price,n-1,M);
+        } else{
+      return  Math.max(recBackPack(m, price, n - 1, M), price[n - 1]
+                  + recBackPack(m, price, n - 1, M - m[n - 1]));}
+    }
+
 }
