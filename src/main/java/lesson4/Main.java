@@ -9,19 +9,19 @@ public class Main {
 //        ll.add(4, 56);
 //        System.out.println(ll.getFirst());
 
-        MyLinketList<Integer> mll = new MyLinketList<>();
+//        MyLinketList<Integer> mll = new MyLinketList<>();
+////
+//        mll.insertFirst(4);
+//        mll.insertFirst(5);
+//        mll.insertFirst(6);
+//        mll.insertFirst(7);
+//        mll.insertFirst(8);
 //
-        mll.insertFirst(4);
-        mll.insertFirst(5);
-        mll.insertFirst(6);
-        mll.insertFirst(7);
-        mll.insertFirst(8);
-
-        System.out.println(mll);
-
-        mll.insertLast(10);
-        mll.insertLast(11);
-        System.out.println(mll);
+//        System.out.println(mll);
+//
+//        mll.insertLast(10);
+//        mll.insertLast(11);
+//        System.out.println(mll);
 //
 //        System.out.println(mll.deleteFirst());
 //        System.out.println(mll.deleteFirst());
