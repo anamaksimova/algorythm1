@@ -14,16 +14,23 @@ public class Main {
 //        System.out.println(map.get(5));
 
 
-//        ChainingHashMap<Integer, String> map = new ChainingHashMap<>(7);
-//        for (int i = 0; i < 7 ; i++) {
-//            map.put(random.nextInt(100), "a");
-//        }
-//        System.out.println(map);
+        ChainingHashMap<Integer, String> map = new ChainingHashMap<>(7);
+        map.put(5, "9999999");
+        map.put(7, "7");
+        map.put(99, "99");
+        map.put(89, "89");
+        map.put(45, "45");
+        map.put(33, "33");
 
 
-        LinearProbingHashMap<Integer, String> lphm = new LinearProbingHashMap<>(97);
-        lphm.put(5, "qwe");
-        lphm.put(15, "qweerwer");
-        System.out.println(lphm.get(15));
+        System.out.println(map);
+        map.delete(77);
+//        map.delete(33); System.out.println(map);  map.delete(45); System.out.println(map);
+//        map.delete(5); System.out.println(map);
+
+//        LinearProbingHashMap<Integer, String> lphm = new LinearProbingHashMap<>(97);
+//        lphm.put(5, "qwe");
+//        lphm.put(15, "qweerwer");
+//        System.out.println(lphm.get(15));
     }
 }
